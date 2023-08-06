@@ -1,80 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="The ultimate platform that connects, refers, 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The ultimate platform that connects, refers, 
     and helps you to find your dream job."
-		/>
-		<meta name="theme-color" content="#2E234E" />
-		<link rel="stylesheet" href="./style.css" />
-		<link rel="stylesheet" href="./media.css" />
-		<link rel="preload" as="image" href="./public/hero-image.svg" />
-		<link rel="preload" as="image" href="./public/alert-info.svg" />
-		<link rel="preload" as="image" href="./public/alert-success.svg" />
-		<link rel="preload" as="image" href="./public/alert-error.svg" />
-		<link rel="icon" type="image/x-icon" href="./public/referR.png" />
-		<link rel="stylesheet" href="./style.css" />
-		<link rel="stylesheet" href="./media.css" />
-		<script src="./web-components/footer-links.js" defer></script>
-		<script src="./web-components/footer-icons.js" defer></script>
-		<script
-			src="https://code.jquery.com/jquery-3.7.0.slim.js"
-			integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c="
-			crossorigin="anonymous"
-		></script>
-		<script src="./index.js" defer></script>
-		<link rel="manifest" href="./manifest.json" />
-		<script>
-			if ("serviceWorker" in navigator) navigator.serviceWorker.register("./service-worker.js");
-		</script>
-		<title>referR</title>
-	</head>
-	<body>
-		<main>
-			<header>
-				<div class="logo"><a href="./index.html">referR</a></div>
-			</header>
+    />
+    <meta name="theme-color" content="#2E234E" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media.css" />
+    <link rel="preload" as="image" href="./public/hero-image.svg" />
+    <link rel="preload" as="image" href="./public/alert-info.svg" />
+    <link rel="preload" as="image" href="./public/alert-success.svg" />
+    <link rel="preload" as="image" href="./public/alert-error.svg" />
+    <link rel="icon" type="image/x-icon" href="./public/referR.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media.css" />
+    <script src="./web-components/footer-links.js" defer></script>
+    <script src="./web-components/footer-icons.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.slim.js"
+      integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js" defer></script>
+    <link rel="manifest" href="./manifest.json" />
+    <script>
+      if ("serviceWorker" in navigator)
+        navigator.serviceWorker.register("./service-worker.js");
+    </script>
+    <title>referR</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo"><a href="./index.html">referR</a></div>
+      </header>
 
-			<section class="hero-banner">
-				<div class="hero-image">
-					<img src="./public/hero-image.svg" alt="Team Work" />
-				</div>
+      <section class="hero-banner">
+        <div class="hero-image">
+          <img src="./public/hero-image.svg" alt="Team Work" />
+        </div>
 
-				<!-- holds all the text, description, input & button -->
-				<div class="hero-text">
-					<div class="coming-soon">
-						<svg width="32" height="5" viewBox="0 0 32 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect y="0.0900879" width="32" height="4" fill="#8062D6" />
-						</svg>
-						<span>Coming Soon</span>
-					</div>
+        <!-- holds all the text, description, input & button -->
+        <div class="hero-text">
+          <div class="coming-soon">
+            <svg
+              width="32"
+              height="5"
+              viewBox="0 0 32 5"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="0.0900879" width="32" height="4" fill="#8062D6" />
+            </svg>
+            <span>Coming Soon</span>
+          </div>
 
-					<div class="tagline">Great teamwork starts with a <span>great team.</span></div>
+          <div class="tagline">
+            Great teamwork starts with a <span>great team.</span>
+          </div>
 
-					<div class="description">
-						The ultimate platform that connects, refers, and helps you to find your dream job.
-					</div>
+          <div class="description">
+            The ultimate platform that connects, refers, and helps you to find
+            your dream job.
+          </div>
 
-					<form class="email-form" autocomplete="off">
-						<div class="input-alert-div error">
-							<input type="text" id="email" placeholder="Enter your e-mail address" />
-							<div class="alert">
-								<img class="alert-icon" src="./public/alert-error.svg" alt="" />
-								<span class="alert-text">Enter a valid email.</span>
-							</div>
-						</div>
-						<button type="button" onclick="register();">Get Notified!</button>
-					</form>
-				</div>
-			</section>
+          <form class="email-form" autocomplete="off">
+            <div class="input-alert-div error">
+              <input
+                type="text"
+                id="email"
+                placeholder="Enter your e-mail address"
+              />
+              <div class="alert">
+                <img class="alert-icon" src="./public/alert-error.svg" alt="" />
+                <span class="alert-text">Enter a valid email.</span>
+              </div>
+            </div>
+            <button type="button" onclick="register();">Get Notified!</button>
+          </form>
+        </div>
+      </section>
 
-			<footer>
-				<footer-links></footer-links>
-				<footer-icons></footer-icons>
-			</footer>
-		</main>
-	</body>
+      <footer>
+        <footer-links></footer-links>
+        <footer-icons></footer-icons>
+      </footer>
+    </main>
+  </body>
 </html>
