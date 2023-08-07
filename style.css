@@ -8,42 +8,42 @@
 @import "./styles/footer-styles.css";
 
 :root {
-	--primary-color: #8062d6;
-	--primary-color-light: #dfd8f5;
-	--secondary-color: #2e234e;
-	--background-color: #f1f5f8;
-	--border-color: #e5e7eb;
-	--white: #ffffff;
+  --primary-color: #8062d6;
+  --primary-color-light: #dfd8f5;
+  --secondary-color: #2e234e;
+  --background-color: #f1f5f8;
+  --border-color: #e5e7eb;
+  --white: #ffffff;
 
-	--error: #fe5c5b;
-	--success: #46d5b2;
+  --error: #fe5c5b;
+  --success: #46d5b2;
 
-	--border-radius: 0.25rem;
-	--max-width: 1366px;
+  --border-radius: 0.25rem;
+  --max-width: 1366px;
 }
 
 *,
 *::before,
 *::after {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: "Inter", sans-serif;
-	font-size: 1rem;
-	background-color: var(--background-color);
-	color: var(--secondary-color);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
 }
 
 main {
-	width: 90vw;
-	max-width: var(--max-width);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	min-height: 100vh;
-	margin: auto;
+  width: 90vw;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  margin: auto;
 }
